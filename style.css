@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background-color: #212121;
+}
+button {
+  width: 5em;
+  height: 5em;
+  border: solid black 1px;
+  border-radius: 2px;
+  background-color: white;
+}
+#ticTacToe {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+button {
+  background-color: #fff;
+  color: #212121;
+  font-size: 20px;
+}
+.verticleLines {
+  position: absolute;
+  width: 14em;
+  height: 0px;
+  border: solid 2px black;
+}
+.lineVertcalTop {
+  margin-bottom: 12em;
+  /* visibility: hidden; */
+}
+
+.lineVertcalBottom {
+  margin-top: 12em;
+  /* visibility: hidden; */
+}
+
+.lineVertcalMiddle {
+  height: 0px;
+  /* visibility: hidden; */
+}
+.horizontalLines {
+  position: absolute;
+  width: 0em;
+  height: 14em;
+  border-right: solid 2px black;
+}
+.lineHorizontalLeft {
+  margin-left: 12em;
+  visibility: hidden;
+}
+.lineHorizontRight {
+  margin-right: 12em;
+  visibility: hidden;
+}
+.lineHorizontMiddle {
+  margin: 0;
+  visibility: hidden;
+}
+.lineDiagonalLeftToRight {
+  position: absolute;
+  visibility: hidden;
+  height: 20em;
+  transform: rotate(-45deg);
+  border-left: solid 1px black;
+}
+.lineDiagonalRightToLeft {
+  position: absolute;
+  visibility: hidden;
+  height: 20em;
+  transform: rotate(45deg);
+  border-left: solid 1px black;
+}
